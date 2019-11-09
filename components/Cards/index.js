@@ -17,3 +17,21 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+
+function createCard(topic) {
+  let card = document.createElement('div');
+  let headline = document.createElement('div');
+  let author = document.createElement('div');
+  let imgContainer = document.createElement('div');
+  let authorImg = document.createElement('img');
+  let authorName =document.createElement('span');
+
+  //nesting
+  card.appendChild(headline);
+  card.appendChild(author);
+  author.appendChild(imgContainer);
+  imgContainer.appendChild(authorImg);
+  author.appendChild(authorName);
+  
+}
