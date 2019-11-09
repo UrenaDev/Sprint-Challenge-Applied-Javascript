@@ -31,8 +31,8 @@ function CreateTab(content) {
 
   // event listener for click
   tab.addEventListener('click', () => {
-      tab.classList.toggle('active-tab');
-    })
+    tab.classList.toggle('active-tab');
+  })
 
   return tab
 };
