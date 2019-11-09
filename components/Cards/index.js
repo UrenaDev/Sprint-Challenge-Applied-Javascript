@@ -18,6 +18,9 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
+let card = document.querySelector('.cards-container');
+
+
 
 function createCard(topic) {
   let card = document.createElement('div');
@@ -33,5 +36,17 @@ function createCard(topic) {
   author.appendChild(imgContainer);
   imgContainer.appendChild(authorImg);
   author.appendChild(authorName);
-  
+
+  //classes
+  card.classList.add('card');
+  headline.classList.add('headline');
+  author.classList.add('author');
+  imgContainer.classList.add('img-container');
+
+  //content
+  headline.textContent = topic.headline;
+  authorName.textContent = topic.authorName;
+  authorImg.src = topic.authorImg;
+
+  return card
 }
